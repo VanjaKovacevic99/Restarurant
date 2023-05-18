@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutX="1.0" layoutY="2.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Kuvar">
+               <content>
+                  <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <TextField fx:id="kuvarKorisnickoImeTextField" layoutX="132.0" layoutY="76.0" prefHeight="30.0" prefWidth="334.0" promptText="Korisnicko ime" />
+                              <PasswordField fx:id="kuvarPassvordField" layoutX="132.0" layoutY="123.0" prefHeight="30.0" prefWidth="334.0" promptText="Lozinka" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Button fx:id="prijavaKuvarButton" layoutX="237.0" layoutY="46.0" mnemonicParsing="false" onMouseClicked="#showKuvarForm" prefHeight="30.0" prefWidth="125.0" text="Prijava" />
+                              <Label fx:id="kuvarPrijavaLabela" layoutX="134.0" layoutY="113.0" prefHeight="30.0" prefWidth="330.0" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </content>
+            </Tab>
+            <Tab text="Konobar">
+               <content>
+                  <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <TextField fx:id="konobarKorisnickoImeTextField" layoutX="132.0" layoutY="76.0" prefHeight="30.0" prefWidth="334.0" promptText="Korisnicko ime" />
+                              <PasswordField fx:id="konobarLozinkaPasswordField" layoutX="132.0" layoutY="123.0" prefHeight="30.0" prefWidth="334.0" promptText="Lozinka" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Button fx:id="prijavaKonobarButton" layoutX="237.0" layoutY="46.0" mnemonicParsing="false" onMouseClicked="#showKonobarForm" prefHeight="30.0" prefWidth="125.0" text="Prijava" />
+                              <Label fx:id="prijavaKonobarLabela" layoutX="129.0" layoutY="101.0" prefHeight="30.0" prefWidth="330.0" textAlignment="CENTER" />
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
